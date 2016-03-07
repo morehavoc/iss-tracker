@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>ISS Tracker</title>
+    <style>
+        html, body { padding: 0; margin: 0; }
+    </style>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.0beta3/esri/css/main.css">
+    <!-- Satellite must be loaded BEFORE esri, otherwise esri thinks it is a AMD module and you have to do a bunch of other crap. -->
+    <!-- From: https://github.com/shashwatak/satellite-js -->
+    <script src="satellite.js"></script>
+    <script src="https://js.arcgis.com/4.0beta3"></script>
+    <!-- Based on: https://developers.arcgis.com/javascript/beta/sample-code/sandbox/sandbox.html?sample=satellites-3d -->
+    <script src="main.js"></script>
+    <!-- Data for ISS came from: http://www.celestrak.com/NORAD/elements/stations.txt -->
+    <!-- Image from: https://openclipart.org/detail/211230/iss-silhouette -->
+    
+</head>
+
+<body>
+    <div id="viewDiv"></div>
+</body>
+</html>
